@@ -1,0 +1,56 @@
+name: Bug / Dev Report
+description: File a report for developers
+title: "[Bug]: "
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this report!
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+        - label: I have searched for existing issues
+          required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the issue that you are facing.
+    validations:
+      required: true
+  - type: textarea
+    id: behaviour
+    attributes:
+      label: Expected behaviour
+      description: Describe what would be expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Steps to reproduce the issue.
+      placeholder: |
+        1. Run this command...
+        2. Do this animation...
+        3. Press this key...
+    validations:
+      required: true
+  - type: textarea
+    id: proof
+    attributes:
+      label: Proof
+      description: Please upload a video of how you are getting to your issue and include any F8 errors.
+    validations:
+      required: true
+  - type: input
+    id: discordid
+    attributes:
+      label: Discord ID
+      description: Your Discord ID
+      placeholder: "626262"
+    validations:
+      required: true
